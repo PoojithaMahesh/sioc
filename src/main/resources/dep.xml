@@ -5,14 +5,14 @@
 	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context-3.0.xsd">
 
 	<bean class="dependencyinjection.Charger" id="ch">
-		<property name="id" value="1"></property>
-		<property name="name" value="ctype"></property>
+		<constructor-arg name="id" value="1"></constructor-arg>
+		<constructor-arg name="name" value="ctype"></constructor-arg>
 	</bean>
 	<bean class="dependencyinjection.Mobile"  id="mob">
-	     <property name="id" value="1"></property>
-		<property name="name" value="Vivo"></property>
-		<property name="color" value="Red"></property>
-		<property name="charger" ref="ch"></property>
+	     <constructor-arg name="id" value="1"></constructor-arg>
+		<constructor-arg name="name" value="Vivo"></constructor-arg>
+		<constructor-arg name="color" value="Red"></constructor-arg>
+		<constructor-arg name="charger" ref="ch"></constructor-arg>
 	</bean>
 
 

@@ -10,6 +10,14 @@ public class Mobile {
 
 	
 	
+	public Mobile(int id, String name, String color, Charger charger) {
+		super();
+		this.id = id;
+		this.name = name;
+		this.color = color;
+		this.charger = charger;
+	}
+
 	public int getId() {
 		return id;
 	}
